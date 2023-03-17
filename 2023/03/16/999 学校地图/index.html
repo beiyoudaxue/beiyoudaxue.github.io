@@ -16,16 +16,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --sushe1-color: #d2a8ef;                --luse-color: #62be9d;                --luse: #62b">
+    <meta name="description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --lvse-color: #62be9d;                --color-jiao_xue_lou: #cae270;                --colo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="北邮地图">
 <meta property="og:url" content="http://example.com/2023/03/16/999%20%E5%AD%A6%E6%A0%A1%E5%9C%B0%E5%9B%BE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --sushe1-color: #d2a8ef;                --luse-color: #62be9d;                --luse: #62b">
+<meta property="og:description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --lvse-color: #62be9d;                --color-jiao_xue_lou: #cae270;                --colo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-16T01:42:50.169Z">
-<meta property="article:modified_time" content="2023-03-16T07:01:28.650Z">
+<meta property="article:modified_time" content="2023-03-17T14:21:52.407Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="北邮地图">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -247,7 +248,7 @@
         
         
         
-          265 分钟
+          264 分钟
         
       </span>
     
@@ -311,7 +312,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：1 天前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -330,13 +331,11 @@
      <style>
           :root {
                --sushe-color: #d2a8ef;
-               --sushe1-color: #d2a8ef;
-               --luse-color: #62be9d;
-               --luse: #62be9d;
+               --lvse-color: #62be9d;
                --color-jiao_xue_lou: #cae270;
                --color-shi_tang: #e36297;
                --color-sports: #b7c2ee;
-               --men-color: #e2e8cd;
+               --entrance-color: #e2e8cd;
                --jiashuqu-color: #09f5f5;
                /* 北边的路*/
                --d: 20;
@@ -361,7 +360,7 @@
                position: fixed;
                z-index: 1;
                left: 1px;
-               top: 30px;
+               top: 300px;
                width: 100%;
                height: 100%;
                overflow: auto;
@@ -391,9 +390,6 @@
                text-decoration: none;
                cursor: pointer;
           }
-
-          /* 1设置弹框 */
-
 
           /* 全局整体 */
           .box {
@@ -643,7 +639,7 @@
           }
 
           .cd1 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
 
                left: calc((75 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((373 + var(--y_distance))*var(--y_scale)*1px);
@@ -670,7 +666,7 @@
           }
 
           .cd2 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
 
                left: calc((192 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((372 + var(--y_distance))*var(--y_scale)*1px);
@@ -688,7 +684,7 @@
           }
 
           .cd3 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
 
                left: calc((75 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((478 + var(--y_distance))*var(--y_scale)*1px);
@@ -698,7 +694,7 @@
           }
 
           .cd4 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
 
                left: calc((192 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((478 + var(--y_distance))*var(--y_scale)*1px);
@@ -931,7 +927,7 @@
           }
 
           .dks {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
 
                left: calc((598 + var(--x_distance))*var(--x_scale)*1px);
@@ -1018,7 +1014,7 @@
           }
 
           .bm {
-               background-color: var(--men-color);
+               background-color: var(--entrance-color);
                font-size: calc((var(--font_size_first) + 5) * 1px);
                line-height: calc((var(--font_size_first) + 5 ) * 1px);
 
@@ -1029,7 +1025,7 @@
           }
 
           .xi_men {
-               background-color: var(--men-color);
+               background-color: var(--entrance-color);
                font-size: calc((var(--font_size_first) + 5) * 1px);
                line-height: calc((var(--font_size_first) + 5 ) * 1px);
                left: calc((0 + var(--x_distance))*var(--x_scale)*1px);
@@ -1039,7 +1035,7 @@
           }
 
           .dong_men {
-               background-color: var(--men-color);
+               background-color: var(--entrance-color);
                font-size: calc((var(--font_size_first) + 5) * 1px);
                line-height: calc((var(--font_size_first) + 5 ) * 1px);
 
@@ -1100,7 +1096,7 @@
           }
 
           .nan_men {
-               background-color: var(--men-color);
+               background-color: var(--entrance-color);
                font-size: calc((var(--font_size_first) + 5) * 1px);
                line-height: calc((var(--font_size_first) + 5 ) * 1px);
 
@@ -1161,7 +1157,7 @@
           }
 
           .lsvw1 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((75 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((760 + var(--y_distance))*var(--y_scale)*1px);
@@ -1170,7 +1166,7 @@
           }
 
           .lsvw2 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((200 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((760 + var(--y_distance))*var(--y_scale)*1px);
@@ -1179,7 +1175,7 @@
           }
 
           .lsvw3 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((75 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((830 + var(--y_distance))*var(--y_scale)*1px);
@@ -1188,7 +1184,7 @@
           }
 
           .lsvw4 {
-               background-color: var(--luse-color);
+               background-color: var(--lvse-color);
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((200 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((830 + var(--y_distance))*var(--y_scale)*1px);
@@ -1365,7 +1361,7 @@
           }
 
            .jiao_shu_qu_nan_men {
-                background-color: var(--men-color);
+                background-color: var(--entrance-color);
                 font-size: calc((var(--font_size_first) + 0) * 1px);
                 line-height: calc((var(--font_size_first) - 5 ) * 1px);
                 left: calc((420 + var(--x_distance)) * var(--x_scale) * 1px);
@@ -1562,6 +1558,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%8C%97%E9%82%AE%E5%9C%B0%E5%9B%BE/">#北邮地图</a>
+      
+    </div>
+  
 </div>
 
 
@@ -1589,7 +1592,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年3月16日</div>
+          <div>2023年3月17日</div>
         </div>
       
       
