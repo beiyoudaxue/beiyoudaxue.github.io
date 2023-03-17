@@ -24,7 +24,7 @@
 <meta property="og:description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --lvse-color: #62be9d;                --color-jiao_xue_lou: #cae270;                --colo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-16T01:42:50.169Z">
-<meta property="article:modified_time" content="2023-03-17T14:21:52.407Z">
+<meta property="article:modified_time" content="2023-03-17T15:27:22.115Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="北邮地图">
 <meta name="twitter:card" content="summary_large_image">
@@ -248,7 +248,7 @@
         
         
         
-          264 分钟
+          266 分钟
         
       </span>
     
@@ -360,9 +360,9 @@
                position: fixed;
                z-index: 1;
                left: 1px;
-               top: 300px;
+               top: 30px;
                width: 100%;
-               height: 100%;
+               height: 300%;
                overflow: auto;
                background-color: rgba(0, 0, 0, 0.4);
           }
@@ -372,8 +372,8 @@
                margin: 10% auto;
                padding: 20px;
                border: 0 solid #888;
-               width: 40%;
-               border-radius: 10px;
+               width: 50%;
+               border-radius: 15px;
           }
 
           .close {
@@ -381,7 +381,7 @@
                float: right;
                font-size: 28px;
                font-weight: bold;
-               border-radius: 10px;
+               border-radius: 15px;
           }
 
           .close:hover,
@@ -402,12 +402,11 @@
                justify-content: center; /* 水平居中 */
                font-size: calc(var(--font_size_first) * 1px);
                text-align: center;
-               top: 20px;
+               top: 0px;
                left: var(--d);
                width: 300px;
                height: 200px;
           }
-
 
           .beiyoukeji {
                color: black;
@@ -464,11 +463,9 @@
                width: calc(95 * var(--x_scale_little)*1px);
                height: calc(60 * var(--y_scale_little)*1px);
                z-index: 1;
-
           }
 
           .xh {
-
                letter-spacing: 0;
                background-color: var(--sushe-color);
                left: calc((var(--x_distance) + 350)*var(--x_scale)*1px);
@@ -476,7 +473,6 @@
                width: calc(93 * var(--x_scale_little)*1px);
                height: calc(100 * var(--y_scale_little)*1px);
                z-index: 1;
-
           }
 
           .x6 {
@@ -485,12 +481,6 @@
                top: calc((130 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(45 * var(--x_scale_little) * 1px);
                height: calc(100 * var(--y_scale_little) * 1px);
-               /*left: 460px;*/
-               /*top: 130px;*/
-               /*height: 100px;*/
-               /*width: 45px;*/
-
-
                z-index: 1;
           }
 
@@ -813,7 +803,8 @@
 
           .lao_shi_tang {
                background-color: var(--color-shi_tang);
-
+               line-height: calc((var(--font_size_second) + 2 ) * 1px);
+               font-size: calc(var(--font_size_second) * 1px);
                left: calc((598 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((337 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(80 * var(--x_scale_little) * 1px);
@@ -840,7 +831,8 @@
 
           .tug {
                background-color: var(--sushe-color);
-               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
+               line-height: calc((var(--font_size_second) + 2 ) * 1px);
+               font-size: calc(var(--font_size_second) * 1px);
 
                left: calc((457 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((427 + var(--y_distance))*var(--y_scale)*1px);
@@ -919,7 +911,6 @@
 
           .qmjs {
                background-color: #ded684;
-
                left: calc((714 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((750 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(53 * var(--x_scale_little) * 1px);
@@ -1095,7 +1086,7 @@
                height: calc(40 * var(--y_scale_little) * 1px);
           }
 
-          .nan_men {
+          .zhong_men {
                background-color: var(--entrance-color);
                font-size: calc((var(--font_size_first) + 5) * 1px);
                line-height: calc((var(--font_size_first) + 5 ) * 1px);
@@ -1118,7 +1109,8 @@
 
           .qmjs2 {
                background-color: #2abd65;
-               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
+               line-height: calc((var(--font_size_second) + 2 ) * 1px);
+               font-size: calc(var(--font_size_second) * 1px);
 
                left: calc((365 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((1132 + var(--y_distance))*var(--y_scale)*1px);
@@ -1247,7 +1239,7 @@
                width: calc(79 * var(--x_scale_little) * 1px);
                height: calc(38 * var(--y_scale_little) * 1px);
                font-size: calc((var(--font_size_second) - 0 )* 1px);
-               line-height: calc((var(--font_size_second) - 10 ) * 1px);
+               line-height: calc((var(--font_size_second) - 0 ) * 1px);
           }
 
           .xing_zheng_ban_gong_lou {
@@ -1264,7 +1256,6 @@
 
           .cai_wu_chu {
                background-color: palevioletred;
-               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((350 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((593 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(70 * var(--x_scale_little) * 1px);
@@ -1275,7 +1266,6 @@
 
           .hou_qin_lou {
                background-color: #a48ce8;
-               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((350 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((617 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(70 * var(--x_scale_little) * 1px);
@@ -1286,7 +1276,6 @@
 
           .bj {
                background-color: #5dd0db;
-               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
                left: calc((580 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((1278 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(155 * var(--x_scale_little) * 1px);
@@ -1360,7 +1349,7 @@
                height: calc(50 * var(--y_scale_little) * 1px);
           }
 
-           .jiao_shu_qu_nan_men {
+           .nan_men {
                 background-color: var(--entrance-color);
                 font-size: calc((var(--font_size_first) + 0) * 1px);
                 line-height: calc((var(--font_size_first) - 5 ) * 1px);
@@ -1396,20 +1385,9 @@
                width: calc(110 * var(--x_scale_little) * 1px);
                height: calc(50 * var(--y_scale_little) * 1px);
           }
-
-
-
-          .a {
-               color: red;
-          }
-
-          .p {
-               color: red;
-          }
-
-          .div {
-               color: red;
-          }
+          /*.a {               color: red;          }*/
+          /*.p {               color: red;          }*/
+          /*.div {               color: red;          }*/
      </style>
 </head>
 
@@ -1426,7 +1404,11 @@
      <div class="box x6"><p style="color: black">学6</p></div>
      <div class="box x61"><p style="color: black"></p></div>
      <div class="box x62"><p style="color: black"></p></div>
-     <div class="box zao_tang"><a style="color: black" href="#" title="开放:15:00-23:30">澡堂</a></div>
+     <button class="box zao_tang" onclick="openModal('modal6')">澡堂</button>
+     <div id="modal6" class="modal"><div class="modal-content">
+         <span class="close" onclick="closeModal('modal6')">&times;&times;&times;</span>
+         <p>澡堂开放:15:00-23:30</p></div></div>
+
      <div class="box li_fa_dian"><a style="color: black" href="#" title="开放:08:00-20:00">理发店</a></div>
      <div class="box tai_yang_neng_shui_fang"><a style="color: black" href="#" title="开放:08:00-22:00">水房</a></div>
      <div class="box guo_lu_fang"><p style="color: black">锅炉房</p></div>
@@ -1437,6 +1419,11 @@
      <div class="box qngy"><p style="color: black">青年公寓</p></div>
      <div class="box lxs"><p style="color: black">留学生公寓</p></div>
      <div class="box xin_shi_tang"><p style="color: black">新食堂</p></div>
+     <button class="box xin_shi_tang" onclick="openModal('modal7')">新食堂</button>
+<div id="modal7" class="modal"><div class="modal-content">
+    <span class="close" onclick="closeModal('modal7')">&times;&times;&times;</span>
+    <p>新食堂：待添加</p></div></div>
+
      <div class="box x13"><p style="color: black">学13</p></div>
      <div class="box x5"><p style="color: black">学5</p></div>
      <div class="box cd1"><p style="color: black">草地</p></div>
@@ -1449,42 +1436,77 @@
      <div class="box x1"><p style="color: black">学1</p></div>
      <div class="box x2"><p style="color: black">学2</p></div>
      <div class="box kd1"><p style="color: black"></p></div>
-     <div class="box mai_dang_lao"><a style="color: black" href="#" title="拟开业">麦当劳</a></div>
-     <div class="box wu_mei"><a style="color: black" href="#" title="开放:14:00-16:00">物美</a></div>
+     <button class="box mai_dang_lao" onclick="openModal('modal8')">麦当劳</button>
+     <div id="modal8" class="modal"><div class="modal-content">
+         <span class="close" onclick="closeModal('modal8')">&times;&times;&times;</span>
+         <p>麦当劳 拟开业</p></div></div>
+
+
+     <button class="box wu_mei" onclick="openModal('modal9')">物美</button>
+     <div id="modal9" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;&times;&times;</span>
+          <p>物美 待添加</p></div></div>
+
      <div class="box mlt"><p style="color: black"></p></div>
      <div class="box shui_guo_dian"><a style="color: black" href="#" title="开放:14:00-16:00">水果店</a></div>
      <div class="box da_yin_dian"><p style="color: black">打印店</p></div>
-     <div class="box jiao_gong_can_ting"><a style="color: black" href="#" title="开放:14:00-16:00">教工餐厅</a></div>
+
+     <button class="box jiao_gong_can_ting" onclick="openModal('modal10')">教工餐厅</button>
+     <div id="modal10" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;&times;&times;</span>
+          <p>教工餐厅开放:08:00-21:00</p></div></div>
+
      <div class="box xue_sheng_shu_wu"><p style="color: black"></p></div> <!-- 学苑书屋-->
      <div class="box xue_sheng_chu"><p style="color: black">学生处</p></div>
-     <div class="box lao_shi_tang"><a style="color: black" href="#" title="开放:14:00-16:00">老食堂</a></div>
+
+     <button class="box lao_shi_tang" onclick="openModal('modal11')">老食堂</button>
+     <div id="modal11" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;&times;&times;</span>
+          <p>老食堂开放:08:00-21:00</p></div></div>
+
      <div class="box jsq2"><p style="color: black">家属区</p></div>
      <div class="box bwi"><p style="color: black">保卫处&基建处</p></div>
-     <div class="box tug"><p style="color: black">图书馆</p></div>
+
+
+     <button class="box tug" onclick="openModal('modal3')">图书馆</button>
+     <div id="modal3" class="modal">
+          <div class="modal-content">
+               <span class="close" onclick="closeModal('modal3')">&times;&times;&times;</span>
+               <p>图书馆放时间:08:00-21:00</p></div></div>
+
 
 
      <button class="box lan_qiu_chang" onclick="openModal('modal1')">篮球场</button>
      <div id="modal1" class="modal">
           <div class="modal-content">
-               <span class="close" onclick="closeModal('modal1')">&times;&times;&times;&times;&times;&times;</span>
+               <span class="close" onclick="closeModal('modal1')">&times;&times;&times;</span>
                <p>篮球场开放时间</p>
-               <p>08:00-21:00</p></div>
-     </div>
+               <p>08:00-21:00</p></div></div>
 
 
      <div class="box wqi"><p style="color: black">网球场</p></div>
      <div class="box pqi"><p style="color: black">排球场</p></div>
      <div class="box x29"><p style="color: black">学29</p></div>
-     <div class="box ti_yu_guan"><p style="color: black">体育馆</p></div>
-     <div class="box ygr"><p style="color: black">游泳馆</p></div>
+<!--     <div class="box ti_yu_guan"><p style="color: black">体育馆</p></div>-->
+     <button class="box ti_yu_guan" onclick="openModal('modal12')">体育馆</button>
+     <div id="modal12" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal12')">&times;&times;&times;</span>
+          <p>体育馆 待添加</p></div></div>
+
+
+     <button class="box ygr" onclick="openModal('modal13')">游泳馆</button>
+     <div id="modal13" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal13')">&times;&times;&times;</span>
+          <p>游泳馆 待添加</p></div></div>
+
+
      <button class="box cao_chang" onclick="openModal('modal2')">操场</button>
      <div id="modal2" class="modal">
           <div class="modal-content">
-               <span class="close" onclick="closeModal('modal2')">&times;</span>
-               <p>操场开放时间:08:00-21:00</p></div>
-     </div>
+               <span class="close" onclick="closeModal('modal2')">&times;&times;&times;</span>
+               <p>操场开放时间:08:00-21:00</p></div></div>
 
-     <div class="box qmjs"><p style="color: black">全名健身</p></div>
+     <div class="box qmjs"><p style="color: black">全民健身</p></div>
      <div class="box dks"><p style="color: black">大空地</p></div>
      <div class="box j1"><p style="color: black">教一楼</p></div>
      <div class="box j11"><p style="color: black"></p></div>
@@ -1494,19 +1516,42 @@
      <div class="box j2"><p style="color: black">教二楼</p></div>
      <div class="box j21"><p style="color: black"></p></div>
      <div class="box j22"><p style="color: black"></p></div>
-     <div class="box bm"><p style="color: black">北门</p></div>
-     <div class="box xi_men"><a href="#" title="开放:08:00-22:00">西门</a>
-     </div>
-     <div class="box dong_men"><a href="#" title="开放:00:00-24:00">东门</a>
-     </div>
+     <button class="box bm" onclick="openModal('modal5')">北门</button>
+     <div id="modal5" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;&times;&times;</span>
+          <p>北门暂时不开</p></div></div>
+
+     <button class="box xi_men" onclick="openModal('modal4')">西门</button>
+     <div id="modal4" class="modal">
+          <div class="modal-content">
+               <span class="close" onclick="closeModal('modal4')">&times;&times;&times;</span>
+               <p>西门开放:08:00-22:00</p></div></div>
+
+
+     <button class="box dong_men" onclick="openModal('modal14')">东门</button>
+     <div id="modal14" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">&times;&times;&times;</span>
+          <p>东门 开放:00:00-24:00</p></div></div>
+
+
      <div class="box j4"><p style="color: black">教四楼</p></div>
      <div class="box j41"><p style="color: black"></p></div>
      <div class="box j42"><p style="color: black"></p></div>
      <div class="box j3"><p style="color: black">教三楼</p></div>
-     <div class="box xyy"><p style="color: black">校医院</p></div>
-     <div class="box nan_men"><a style="color: black" href="#" title="开放:08:00-22:00">南门</a></div>
+     <button class="box xyy" onclick="openModal('modal15')">校医院</button>
+     <div id="modal15" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">&times;&times;&times;</span>
+          <p>校医院 待添加</p></div></div>
+
+
+     <button class="box zhong_men" onclick="openModal('modal16')">中门</button>
+     <div id="modal16" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">&times;&times;&times;</span>
+          <p>中门 待添加</p></div></div>
+
+
      <div class="box nan_qu_chao_shi"><p style="color: black">超市</p></div>
-     <div class="box qmjs2"><p style="color: black">全名健身</p></div>
+     <div class="box qmjs2"><p style="color: black">全民健身</p></div>
      <div class="box bwyey"><p style="color: black">北邮幼儿园</p></div>
      <div class="box njuq"><p style="color: black">家属区</p></div>  <!-- 家属区教二下边-->
      <div class="box njuq1"><p style="color: black">家属区</p></div>  <!-- 家属区操场下面-->
@@ -1531,7 +1576,7 @@
      <div class="box jsq6"><p style="color: black"></p></div>  <!-- 家属区商铺下下面1-->
      <div class="box jsq7"><p style="color: black"></p></div>  <!-- 家属区南门左边2-->
      <div class="box hcp"><p style="color: black"></p></div>
-     <div class="box jiao_shu_qu_nan_men"><p style="color: black">家属区<br>南门</p></div>
+     <div class="box nan_men"><p style="color: black">南门</p></div>
      <div class="box ming_guang_lou"><p style="color: black">明光楼</p></div>
      <div class="box jsq8"><p style="color: black"></p></div>   <!-- 左下边家属区-->
      <div class="box shang_pu"><p style="color: black">商铺</p></div>
