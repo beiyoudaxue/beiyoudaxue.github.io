@@ -24,7 +24,7 @@
 <meta property="og:description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --lvse-color: #62be9d;                --color-jiao_xue_lou: #cae270;                --colo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-16T01:42:50.169Z">
-<meta property="article:modified_time" content="2023-03-18T12:29:26.524Z">
+<meta property="article:modified_time" content="2023-03-18T15:19:25.541Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="北邮地图">
 <meta name="twitter:card" content="summary_large_image">
@@ -248,7 +248,7 @@
         
         
         
-          266 分钟
+          270 分钟
         
       </span>
     
@@ -312,7 +312,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2 小时前
+                    本文最后更新于：10 分钟前
                   
                 
               </p>
@@ -337,6 +337,7 @@
                --color-sports: #b7c2ee;
                --entrance-color: #e2e8cd;
                --jiashuqu-color: #09f5f5;
+               --color-li-fa: #bbf1d4; /* 理发店*/
                /* 北边的路*/
                --d: 20;
                --a: 0.7;
@@ -517,8 +518,8 @@
                z-index: 1;
           }
 
-          .li_fa_dian {
-               background-color: #e6f5ed;
+          .ge_ge_li_fa_dian {
+               background-color: var(--color-li-fa);
                left: calc((486 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((245 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(30 * var(--x_scale_little) * 1px);
@@ -1386,9 +1387,17 @@
                width: calc(110 * var(--x_scale_little) * 1px);
                height: calc(50 * var(--y_scale_little) * 1px);
           }
-          /*.a {               color: red;          }*/
-          /*.p {               color: red;          }*/
-          /*.div {               color: red;          }*/
+          .sheng_shi_hao {
+               background-color: var(--color-li-fa);
+               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
+               left: calc((20 + var(--x_distance)) * var(--x_scale) * 1px);
+               top: calc((1120 + var(--y_distance))*var(--y_scale)*1px);
+               width: calc(50 * var(--x_scale_little) * 1px);
+               height: calc(50 * var(--y_scale_little) * 1px);
+          }
+
+
+
      </style>
 </head>
 
@@ -1410,7 +1419,13 @@
          <span class="close" onclick="closeModal('modal6')">&times;&times;&times;</span>
          <p>澡堂开放:15:00-23:30</p></div></div>
 
-     <div class="box li_fa_dian"><a style="color: black" href="#" title="开放:08:00-20:00">理发店</a></div>
+
+     <button class="box ge_ge_li_fa_dian" onclick="openModal('modal17')">理发店</button>
+     <div id="modal17" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">&times;&times;&times;</span>
+          <p>格格理发店 营业时间 08:00-20:00</p></div></div>
+
+
      <div class="box tai_yang_neng_shui_fang"><a style="color: black" href="#" title="开放:08:00-22:00">水房</a></div>
      <div class="box guo_lu_fang"><p style="color: black">锅炉房</p></div>
      <div class="box jsq"><p style="color: black">家属区</p></div>
@@ -1482,8 +1497,8 @@
           <div class="modal-content">
                <span class="close" onclick="closeModal('modal1')">&times;&times;&times;</span>
                <p>篮球场开放时间</p>
+               <a href="/hide/篮球场">具体详情</a>
                <p>08:00-21:00</p></div></div>
-
 
      <div class="box wqi"><p style="color: black">网球场</p></div>
      <div class="box pqi"><p style="color: black">排球场</p></div>
@@ -1581,6 +1596,12 @@
      <div class="box ming_guang_lou"><p style="color: black">明光楼</p></div>
      <div class="box jsq8"><p style="color: black"></p></div>   <!-- 左下边家属区-->
      <div class="box shang_pu"><p style="color: black">商铺</p></div>
+     <div class="box sheng_shi_hao"><p style="color: black">圣士豪</p></div>
+     <button class="box sheng_shi_hao" onclick="openModal('modal18')">圣士豪</button>
+     <div id="modal18" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal18')">&times;&times;&times;</span>
+          <p>圣士豪理发店 营业时间：08:00 - 21:00</p></div></div>
+
 
      <script>
           // 1打开弹窗
