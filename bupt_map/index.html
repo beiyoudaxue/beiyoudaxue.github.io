@@ -24,7 +24,7 @@
 <meta property="og:description" content="北邮地图                 :root {                --sushe-color: #d2a8ef;                --lvse-color: #62be9d;                --color-jiao_xue_lou: #cae270;                --colo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-16T01:42:50.169Z">
-<meta property="article:modified_time" content="2023-03-26T03:54:58.204Z">
+<meta property="article:modified_time" content="2023-03-26T04:08:01.939Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="北邮地图">
 <meta name="twitter:card" content="summary_large_image">
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          33k 字
+          34k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          278 分钟
+          282 分钟
         
       </span>
     
@@ -312,7 +312,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：1 分钟前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -1078,13 +1078,20 @@
           .j3 {
                background-color: var(--color-jiao_xue_lou);
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
-
                left: calc((75 + var(--x_distance))*var(--x_scale)*1px);
                top: calc((920 + var(--y_distance))*var(--y_scale)*1px);
                width: calc(225 * var(--x_scale_little) * 1px);
                height: calc(110 * var(--y_scale_little) * 1px);
           }
-
+          .j3_da_yin_dian {
+               background-color: var(--color-jiao_xue_lou);
+               line-height: calc((var(--font_size_third) *2 ) * 1px);
+              font-size: calc(var(--font_size_third) *2* 1px);
+               left: calc((245 + var(--x_distance))*var(--x_scale)*1px);
+               top: calc((960 + var(--y_distance))*var(--y_scale)*1px);
+               width: calc(25 * var(--x_scale_little) * 1px);
+               height: calc(50 * var(--y_scale_little) * 1px);
+          }
           .xyy {
                background-color: #63e21a;
                line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
@@ -1414,11 +1421,12 @@
           }
           .sheng_shi_hao {
                background-color: var(--color-li-fa);
-               line-height: calc((var(--font_size_second) + 2 ) * 1px);font-size: calc(var(--font_size_second) * 1px);
-               left: calc((20 + var(--x_distance)) * var(--x_scale) * 1px);
+               line-height: calc((var(--font_size_second) *0.7 ) * 1px);
+              font-size: calc(var(--font_size_second) *0.6* 1px);
+               left: calc((40 + var(--x_distance)) * var(--x_scale) * 1px);
                top: calc((1120 + var(--y_distance))*var(--y_scale)*1px);
-               width: calc(50 * var(--x_scale_little) * 1px);
-               height: calc(50 * var(--y_scale_little) * 1px);
+               width: calc(30 * var(--x_scale_little) * 1px);
+               height: calc(60 * var(--y_scale_little) * 1px);
           }
 
 
@@ -1589,9 +1597,19 @@
      </div></div>
 
      <div class="box j4"><p style="color: black">教四楼</p></div>
+
      <div class="box j41"><p style="color: black"></p></div>
      <div class="box j42"><p style="color: black"></p></div>
      <div class="box j3"><p style="color: black">教三楼</p></div>
+
+      <button class="box j3_da_yin_dian" onclick="openModal('modal20')">打印店</button>
+     <div id="modal20" class="modal"><div class="modal-content">
+          <span class="close" onclick="closeModal('modal20')">&times;&times;&times;</span>
+          <p>教三 打印店</p>
+          <p>营业时间:早8:00 - 晚9:30，节假日不休</p>
+          <p>价格和其他家一样</p>
+     </div></div>
+
      <button class="box xyy" onclick="openModal('modal15')">校医院</button>
      <div id="modal15" class="modal"><div class="modal-content">
           <span class="close" onclick="closeModal('modal15')">&times;&times;&times;</span>
@@ -1651,7 +1669,6 @@
      <div class="box ming_guang_lou"><p style="color: black">明光楼</p></div>
      <div class="box jsq8"><p style="color: black"></p></div>   <!-- 左下边家属区-->
      <div class="box shang_pu"><p style="color: black">商铺</p></div>
-<!--     <div class="box sheng_shi_hao"><p style="color: black">圣士豪</p></div>-->
 
 
      <button class="box sheng_shi_hao" onclick="openModal('modal18')">圣士豪</button>
